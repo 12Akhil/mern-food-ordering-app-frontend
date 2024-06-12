@@ -95,7 +95,7 @@ const ManageRestaurantForm = ({ onSave, isLoading, restaurant }: Props) => {
     formData.append("restaurantName", formDataJson.restaurantName);
     formData.append("city", formDataJson.city);
     formData.append("country", formDataJson.country);
-    formData.append("deliveryPrice", (formDataJson.deliveryPrice * 100).toString());
+    formData.append("deliveryPrice", (formDataJson.deliveryPrice).toString());
     formData.append("estimatedDeliveryTime", formDataJson.estimatedDeliveryTime.toString());
 
     formDataJson.cuisines.forEach((cuisine, index) => {
